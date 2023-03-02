@@ -1,0 +1,211 @@
+.App {
+  text-align: center;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  background-color: #BAD7E9;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  background-color: lightgrey;
+  
+
+  
+}
+.hero-image{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  border: 1px solid #078bff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+  
+  height: 250px;
+}
+
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+  transition: all 0.3s ease;
+  
+  
+}
+
+.card-image:hover img {
+  transform: scale(1.1);
+}
+
+.card-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-image:hover::before {
+  opacity: 1;
+}
+
+.card-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-info h2 {
+  font-size: 24px;
+  margin-top: 0;
+  color: #0f0f0f;
+  font-weight: bold;
+}
+
+.card-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #de321e;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 10px;
+}
+
+.card-buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-buttons button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.add-to-favourites,
+.view {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-favourites:hover,
+.view:hover {
+  background-color: #3e8e41;
+}
+
+.view {
+  background-color: #008CBA;
+}
+
+.view:hover {
+  background-color: #006983;
+}
+.nop{
+
+  background-color: #61dafb;
+  margin-left: 1100px;
+  border-width: 5px;
+  border-color: #333;
+}
+
+
+.sop{
+  margin-left: 50px;
+  font-style: italic;
+  font-size: large;
+  
+}
+
+.card-containers {
+
+  width: 100%;
+  height: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.card {
+  background-color: rgb(230, 230, 230);
+  margin: 12px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
